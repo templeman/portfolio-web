@@ -1,0 +1,116 @@
+/* ============================================================
+
+	DOCUMENT INFORMATION
+		- Document: Sam Templeman Web Portfolio
+		- Version:	0.1
+		- Date:		August 2012
+		- Author:	Needle Hoffenheimer
+
+	CSS DIRECTORY
+		1. =IMPORTS
+
+	HACK DIRECTORY
+
+	FONTS
+   	- default body text :	Open Sans Condensed, sans-serif
+
+	============================================================ */
+
+
+
+
+// IMPORTS
+
+@import "base";
+
+body { 
+	background: image-url('top-tile.png') repeat-x center top,
+							image-url('body-tile.png') center top;
+	// height: 2000px;
+	font: 24px/32px 'Open Sans Condensed', sans-serif;
+	color: $body-copy; 
+	}
+
+a {
+	color: $body-copy;
+	text-decoration: none;
+	&:active, &:hover {
+		color: #fff;
+		}
+	}
+
+header { 
+	padding: 0 0 0 200px;
+	margin-top: 194px;
+	}
+
+span.hero-text { 
+	display: block;
+	@include replace-text-with-dimensions('hero-text.png');
+	}
+
+.container {
+	width: 800px;
+	margin: 0 auto;
+	}
+
+.creations {
+	padding: 0 0 0 200px;
+	background: image-url('ammonite.png') no-repeat top left;
+	}
+
+.creations-header {
+	@include replace-text-with-dimensions('creations.png');
+	}
+
+.logbook {
+	padding: 0 0 0 200px;
+	background: image-url('cuttlefish.png') no-repeat top left;
+	}
+
+.logbook-header {
+	@include replace-text-with-dimensions('logbook.png');
+	}
+
+footer {
+	background: image-url('seabed.png') repeat-x;
+	}
+
+#lights {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	}
+
+.block {
+	margin-bottom: 3000px;
+	}
+
+nav {
+	position: fixed;
+	left: 0;
+	top: 194px;
+	z-index: 100;
+	font-size: .8em;
+	ul {
+		margin: 0 0 0 -3px;
+		padding: 0;
+		li {
+			border: 1px solid $body-copy;
+			a {
+				display: block;
+				padding: 20px;
+				}
+			}
+		}
+	}
+
+
+#test {
+	// needs latest Compass, add '@import "compass"' to your scss
+	@include filter-gradient(#000000, #000716, vertical); // IE6-8
+	// IE9 SVG, needs conditional override of 'filter' to 'none'
+	$experimental-support-for-svg: true;
+	@include background-image(linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,7,22,1) 100%));
+	}

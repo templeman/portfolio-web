@@ -1,0 +1,18 @@
+// COLORS
+
+$body-copy: #3f61cb;
+
+
+
+// IMPORTS
+
+@import "compass";
+@import "normalize";
+@import "compass/layout/sticky-footer";
+
+
+
+// MIXINS
+
+@include normalize;
+@include sticky-footer(140px, ".container", ".container-footer", "footer");
