@@ -31,6 +31,9 @@ body {
 	color: $body-copy; 
 	}
 
+p {
+	margin-bottom: 30px; }
+
 a {
 	color: $body-copy;
 	text-decoration: none;
@@ -39,37 +42,63 @@ a {
 		}
 	}
 
+a.active { color: #fff; }
+
+.small { font-size: .8em; }
+
+h3 {
+	font-size: 1.3em;
+	font-weight: normal; }
+
 header { 
-	padding: 0 0 0 200px;
 	margin-top: 194px;
 	}
 
 span.hero-text { 
 	display: block;
+	margin: 30px 0 0 0;
 	@include replace-text-with-dimensions('hero-text.png');
 	}
 
-.container {
+.container, .inner {
 	width: 800px;
 	margin: 0 auto;
+	h2 {
+		margin-top: 1.5em;
+		}
+	}
+
+#jellyfish {
+	background: image-url('jellyfish.png') no-repeat top left;
+	position: absolute;
+	width: 356px;
+	height: 337px;
+	top: 700px;
+	left: 500px;
 	}
 
 .creations {
-	padding: 0 0 0 200px;
 	background: image-url('ammonite.png') no-repeat top left;
 	}
 
-.creations-header {
+#creations-header {
 	@include replace-text-with-dimensions('creations.png');
 	}
 
 .logbook {
-	padding: 0 0 0 200px;
+	background: image-url('angler.png') no-repeat top left;
+	}
+
+#logbook-header {
+	@include replace-text-with-dimensions('logbook.png');
+	}
+
+.biographical {
 	background: image-url('cuttlefish.png') no-repeat top left;
 	}
 
-.logbook-header {
-	@include replace-text-with-dimensions('logbook.png');
+#biographical-header {
+	@include replace-text-with-dimensions('biographical.png');
 	}
 
 footer {
@@ -84,8 +113,26 @@ footer {
 	}
 
 .block {
+	padding: 0 0 0 200px;
 	margin-bottom: 3000px;
 	}
+
+section.last-child {
+	margin: 0; }
+
+.work-item {
+	padding: 0 0 40px 140px;
+	}
+
+.umc {
+	background: image-url('umc-icon.png') no-repeat top left;
+}
+
+.psp {
+	background: image-url('psp-icon.png') no-repeat top left; }
+
+.mo {
+	background: image-url('mo-icon.png') no-repeat top left; }
 
 nav {
 	position: fixed;
