@@ -409,11 +409,6 @@ h3 {
   font-weight: normal;
 }
 
-/* line 56, ../sass/screen.scss */
-header {
-  margin-top: 194px;
-}
-
 /* line 60, ../sass/screen.scss */
 span.hero-text {
   display: block;
@@ -429,16 +424,19 @@ span.hero-text {
 }
 
 /* line 66, ../sass/screen.scss */
-.container, .inner {
+.container {
+  padding: 165px 0 0 0;
+  position: relative;
+  z-index: 10;
   width: 800px;
   margin: 0 auto;
 }
-/* line 69, ../sass/screen.scss */
-.container h2, .inner h2 {
+/* line 72, ../sass/screen.scss */
+.container h2 {
   margin-top: 1.5em;
 }
 
-/* line 74, ../sass/screen.scss */
+/* line 77, ../sass/screen.scss */
 #jellyfish {
   background: url('/image/jellyfish.png?1344617791') no-repeat top left;
   position: absolute;
@@ -448,12 +446,12 @@ span.hero-text {
   left: 500px;
 }
 
-/* line 83, ../sass/screen.scss */
+/* line 86, ../sass/screen.scss */
 .creations {
   background: url('/image/ammonite.png?1344512258') no-repeat top left;
 }
 
-/* line 87, ../sass/screen.scss */
+/* line 90, ../sass/screen.scss */
 #creations-header {
   text-indent: -119988px;
   overflow: hidden;
@@ -465,12 +463,12 @@ span.hero-text {
   height: 50px;
 }
 
-/* line 91, ../sass/screen.scss */
+/* line 94, ../sass/screen.scss */
 .logbook {
   background: url('/image/angler.png?1344618852') no-repeat top left;
 }
 
-/* line 95, ../sass/screen.scss */
+/* line 98, ../sass/screen.scss */
 #logbook-header {
   text-indent: -119988px;
   overflow: hidden;
@@ -482,12 +480,12 @@ span.hero-text {
   height: 63px;
 }
 
-/* line 99, ../sass/screen.scss */
+/* line 102, ../sass/screen.scss */
 .biographical {
   background: url('/image/cuttlefish.png?1344518212') no-repeat top left;
 }
 
-/* line 103, ../sass/screen.scss */
+/* line 106, ../sass/screen.scss */
 #biographical-header {
   text-indent: -119988px;
   overflow: hidden;
@@ -499,12 +497,12 @@ span.hero-text {
   height: 65px;
 }
 
-/* line 107, ../sass/screen.scss */
+/* line 110, ../sass/screen.scss */
 footer {
   background: url('/image/seabed.png?1344521913') repeat-x;
 }
 
-/* line 111, ../sass/screen.scss */
+/* line 114, ../sass/screen.scss */
 #lights {
   position: absolute;
   top: 0;
@@ -514,38 +512,38 @@ footer {
   width: 100%;
 }
 
-/* line 121, ../sass/screen.scss */
+/* line 124, ../sass/screen.scss */
 .block {
   padding: 0 0 0 200px;
   margin-bottom: 3000px;
 }
 
-/* line 126, ../sass/screen.scss */
+/* line 129, ../sass/screen.scss */
 section.last-child {
   margin: 0;
 }
 
-/* line 129, ../sass/screen.scss */
+/* line 132, ../sass/screen.scss */
 .work-item {
   padding: 0 0 40px 140px;
 }
 
-/* line 133, ../sass/screen.scss */
+/* line 136, ../sass/screen.scss */
 .umc {
   background: url('/image/umc-icon.png?1344615020') no-repeat top left;
 }
 
-/* line 137, ../sass/screen.scss */
+/* line 140, ../sass/screen.scss */
 .psp {
   background: url('/image/psp-icon.png?1344616074') no-repeat top left;
 }
 
-/* line 140, ../sass/screen.scss */
+/* line 143, ../sass/screen.scss */
 .mo {
   background: url('/image/mo-icon.png?1344619781') no-repeat top left;
 }
 
-/* line 143, ../sass/screen.scss */
+/* line 146, ../sass/screen.scss */
 nav {
   position: fixed;
   left: 0;
@@ -553,23 +551,23 @@ nav {
   z-index: 100;
   font-size: .8em;
 }
-/* line 149, ../sass/screen.scss */
+/* line 152, ../sass/screen.scss */
 nav ul {
   margin: 0 0 0 -3px;
   padding: 0;
 }
-/* line 152, ../sass/screen.scss */
+/* line 155, ../sass/screen.scss */
 nav ul li {
   border: 1px solid #3f61cb;
   margin: 0 0 -1px 0;
 }
-/* line 155, ../sass/screen.scss */
+/* line 158, ../sass/screen.scss */
 nav ul li a {
   display: block;
   padding: 20px;
 }
 
-/* line 164, ../sass/screen.scss */
+/* line 167, ../sass/screen.scss */
 #test {
   *zoom: 1;
   filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF000000', endColorstr='#FF000716');

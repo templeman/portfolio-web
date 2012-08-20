@@ -1,6 +1,9 @@
-/* Author:
-	@danheberden and the gang :)
+/*
+ * this script modified from the original by @danheberden
+ * on w3fools.com
 */
+
+
 (function($) {
 	$(function() {
 
@@ -97,39 +100,12 @@
 			setTimeout( arguments.callee, 1500 );
 		})();
 		
-		/*
-		var contributors = $('#contributors');
-		contributors.find('h2').click(function(){
-			contributors.find('a').sort(function(){ return 0.5 - Math.random(); }).each(function(){ $(this).appendTo(contributors) });
+
+		// function to display "depth"
+		$(document).on('scroll', function() {
+			$('.depth').html($(window).scrollTop() / 2 + " meters");
 		});
-		
-		
-		twttr.anywhere(function(T) {
-			T('#contributors').hovercards();
-		});
-		*/
-		
 
 	});
 
-	$(function () {
-		var keys = [ ],
-			kc   = '38,38,40,40,37,39,37,39,66,65';
-
-		function keydown(e) {
-			keys.push(e.which);
-			if (keys.join(',').indexOf(kc) > -1) {
-				$(document).unbind('keydown', keydown);
-				var height = 600,
-					width = 800;
-				window.open('certificate.html', 'U DUN GOOFED',
-					'height=' + height + ',\
-					width=' + width +',\
-					top=' + Number((window.outerHeight - height) / 2) + ',\
-					left=' + Number((window.outerWidth - width) / 2));
-			}
-		}
-
-		$(document).keydown(keydown);
-	});
 })(jQuery);
