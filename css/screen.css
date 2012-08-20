@@ -561,14 +561,15 @@ nav ul {
 /* line 152, ../sass/screen.scss */
 nav ul li {
   border: 1px solid #3f61cb;
+  margin: 0 0 -1px 0;
 }
-/* line 154, ../sass/screen.scss */
+/* line 155, ../sass/screen.scss */
 nav ul li a {
   display: block;
   padding: 20px;
 }
 
-/* line 163, ../sass/screen.scss */
+/* line 164, ../sass/screen.scss */
 #test {
   *zoom: 1;
   filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF000000', endColorstr='#FF000716');
