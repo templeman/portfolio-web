@@ -3,6 +3,10 @@ var ran = function(min, max) {
 	return ((Math.random() * (max - min)) + min).toFixed(2);
 };
 
+var imageI = function() {
+	return (Math.ceil(Math.random() * 4));
+}
+
 var degrees = function(radians) {
 	return radians * (180 / Math.PI)
 };
@@ -25,20 +29,23 @@ $(document).ready(function() {
 
 	var SCREEN_WIDTH = $('body').innerWidth(); //999;// 465;
 	var SCREEN_HEIGHT = $('body').innerWidth(); //999; //465;
-	console.log(SCREEN_HEIGHT);
+	// console.log(SCREEN_HEIGHT);
 	var DAMP = 0.98;
-	var temp_width = $('body').innerWidth();
-	var temp_height = $('body').innerHeight();
-	var paper = new ScaleRaphael("lights", temp_width, temp_height);
-	var url = "image/particle1.png";
+	// var temp_width = $('body').innerWidth();
+	// var temp_height = $('body').innerHeight();
+	var raphael_height = $('#lights').height();
+	var raphael_width = $('#lights').width();
+	var paper = new ScaleRaphael("lights", raphael_width, raphael_height);
+	$('#lights').css('position', 'absolute');
 	
 	// Precompute some constants we will need
 	var PIBY2 = Math.PI / 2;
 	var ToDegrees = 180 / Math.PI;
 
 	var circle = (function() {
-		var x = SCREEN_WIDTH / 2,
-				y = SCREEN_HEIGHT / 2,
+		// randomize initial dot placement
+		var x = (Math.random() * (raphael_width - 100)),
+				y = (Math.random() * (raphael_height - 100)),
 				vx = Math.random() - 0.5,
 				vy = Math.random() - 0.5,
 				dot;
@@ -46,7 +53,7 @@ $(document).ready(function() {
 		return {
 				start: function() {
 						var scale = ran(0.3, 30.0);
-						dot = paper.image(url, x, y, 99, 99).attr({ // 76, 37
+						dot = paper.image("image/particle" + imageI() + ".png", x, y, 99, 99).attr({ // 76, 37
 								//opacity: scale
 						});
 						dot.scale(scale);
@@ -72,10 +79,10 @@ $(document).ready(function() {
                 vy *= DAMP;
 
                 //check bounds invert direction 
-                vx = x < 50 ? vx * -1 : x > temp_width ? vx * -1 : vx; //415 // 800
-                vy = y < 50 ? vy * -1 : y > temp_height ? vy * -1 : vy; // 800
-                x = x < 0 ? SCREEN_WIDTH : x > SCREEN_WIDTH ? 0 : x;
-                y = y < 0 ? SCREEN_HEIGHT : y > SCREEN_HEIGHT ? 0 : y;
+                vx = x < 50 ? vx * -1 : x > raphael_width ? vx * -1 : vx; //415 // 800
+                vy = y < 50 ? vy * -1 : y > raphael_height ? vy * -1 : vy; // 800
+                x = x < 0 ? raphael_width: x > raphael_width ? 0 : x;
+                y = y < 0 ? raphael_height : y > raphael_height ? 0 : y;
 
                 dot.attr({
                     x: x,
@@ -87,7 +94,7 @@ $(document).ready(function() {
 
 
     var dots = [],
-        i = 15;
+        i = 50;
 
     while (i--) {
         dots[i] = new circle();
@@ -102,11 +109,14 @@ $(document).ready(function() {
     }, 1000 / 10);
 
 
+		/*
 		function resizePaper() {
 			var win = $(this);
 			paper.changeSize(win.width(), win.height(), true, false);
 		}
 		resizePaper();
 		$(window).resize(resizePaper);
+		*/
+
 
 		});

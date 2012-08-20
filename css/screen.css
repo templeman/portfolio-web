@@ -366,49 +366,55 @@ footer {
 }
 
 /* line 26, ../sass/screen.scss */
+html {
+  height: 100%;
+}
+
+/* line 28, ../sass/screen.scss */
 body {
+  min-height: 100%;
   background: url('/image/top-tile.png?1344501863') repeat-x center top, url('/image/body-tile.png?1344502376') center top;
   font: 24px/32px "Open Sans Condensed", sans-serif;
   color: #3f61cb;
 }
 
-/* line 34, ../sass/screen.scss */
+/* line 37, ../sass/screen.scss */
 p {
   margin-bottom: 30px;
 }
 
-/* line 37, ../sass/screen.scss */
+/* line 40, ../sass/screen.scss */
 a {
   color: #3f61cb;
   text-decoration: none;
 }
-/* line 40, ../sass/screen.scss */
+/* line 43, ../sass/screen.scss */
 a:active, a:hover {
   color: #fff;
 }
 
-/* line 45, ../sass/screen.scss */
+/* line 48, ../sass/screen.scss */
 a.active {
   color: #fff;
 }
 
-/* line 47, ../sass/screen.scss */
+/* line 50, ../sass/screen.scss */
 .small {
   font-size: .8em;
 }
 
-/* line 49, ../sass/screen.scss */
+/* line 52, ../sass/screen.scss */
 h3 {
   font-size: 1.3em;
   font-weight: normal;
 }
 
-/* line 53, ../sass/screen.scss */
+/* line 56, ../sass/screen.scss */
 header {
   margin-top: 194px;
 }
 
-/* line 57, ../sass/screen.scss */
+/* line 60, ../sass/screen.scss */
 span.hero-text {
   display: block;
   margin: 30px 0 0 0;
@@ -422,17 +428,17 @@ span.hero-text {
   height: 230px;
 }
 
-/* line 63, ../sass/screen.scss */
+/* line 66, ../sass/screen.scss */
 .container, .inner {
   width: 800px;
   margin: 0 auto;
 }
-/* line 66, ../sass/screen.scss */
+/* line 69, ../sass/screen.scss */
 .container h2, .inner h2 {
   margin-top: 1.5em;
 }
 
-/* line 71, ../sass/screen.scss */
+/* line 74, ../sass/screen.scss */
 #jellyfish {
   background: url('/image/jellyfish.png?1344617791') no-repeat top left;
   position: absolute;
@@ -442,12 +448,12 @@ span.hero-text {
   left: 500px;
 }
 
-/* line 80, ../sass/screen.scss */
+/* line 83, ../sass/screen.scss */
 .creations {
   background: url('/image/ammonite.png?1344512258') no-repeat top left;
 }
 
-/* line 84, ../sass/screen.scss */
+/* line 87, ../sass/screen.scss */
 #creations-header {
   text-indent: -119988px;
   overflow: hidden;
@@ -459,12 +465,12 @@ span.hero-text {
   height: 50px;
 }
 
-/* line 88, ../sass/screen.scss */
+/* line 91, ../sass/screen.scss */
 .logbook {
   background: url('/image/angler.png?1344618852') no-repeat top left;
 }
 
-/* line 92, ../sass/screen.scss */
+/* line 95, ../sass/screen.scss */
 #logbook-header {
   text-indent: -119988px;
   overflow: hidden;
@@ -476,12 +482,12 @@ span.hero-text {
   height: 63px;
 }
 
-/* line 96, ../sass/screen.scss */
+/* line 99, ../sass/screen.scss */
 .biographical {
   background: url('/image/cuttlefish.png?1344518212') no-repeat top left;
 }
 
-/* line 100, ../sass/screen.scss */
+/* line 103, ../sass/screen.scss */
 #biographical-header {
   text-indent: -119988px;
   overflow: hidden;
@@ -493,51 +499,53 @@ span.hero-text {
   height: 65px;
 }
 
-/* line 104, ../sass/screen.scss */
+/* line 107, ../sass/screen.scss */
 footer {
   background: url('/image/seabed.png?1344521913') repeat-x;
 }
 
-/* line 108, ../sass/screen.scss */
+/* line 111, ../sass/screen.scss */
 #lights {
   position: absolute;
   top: 0;
+  height: 15512px;
   left: 0;
   z-index: 1;
+  width: 100%;
 }
 
-/* line 115, ../sass/screen.scss */
+/* line 121, ../sass/screen.scss */
 .block {
   padding: 0 0 0 200px;
   margin-bottom: 3000px;
 }
 
-/* line 120, ../sass/screen.scss */
+/* line 126, ../sass/screen.scss */
 section.last-child {
   margin: 0;
 }
 
-/* line 123, ../sass/screen.scss */
+/* line 129, ../sass/screen.scss */
 .work-item {
   padding: 0 0 40px 140px;
 }
 
-/* line 127, ../sass/screen.scss */
+/* line 133, ../sass/screen.scss */
 .umc {
   background: url('/image/umc-icon.png?1344615020') no-repeat top left;
 }
 
-/* line 131, ../sass/screen.scss */
+/* line 137, ../sass/screen.scss */
 .psp {
   background: url('/image/psp-icon.png?1344616074') no-repeat top left;
 }
 
-/* line 134, ../sass/screen.scss */
+/* line 140, ../sass/screen.scss */
 .mo {
   background: url('/image/mo-icon.png?1344619781') no-repeat top left;
 }
 
-/* line 137, ../sass/screen.scss */
+/* line 143, ../sass/screen.scss */
 nav {
   position: fixed;
   left: 0;
@@ -545,22 +553,22 @@ nav {
   z-index: 100;
   font-size: .8em;
 }
-/* line 143, ../sass/screen.scss */
+/* line 149, ../sass/screen.scss */
 nav ul {
   margin: 0 0 0 -3px;
   padding: 0;
 }
-/* line 146, ../sass/screen.scss */
+/* line 152, ../sass/screen.scss */
 nav ul li {
   border: 1px solid #3f61cb;
 }
-/* line 148, ../sass/screen.scss */
+/* line 154, ../sass/screen.scss */
 nav ul li a {
   display: block;
   padding: 20px;
 }
 
-/* line 157, ../sass/screen.scss */
+/* line 163, ../sass/screen.scss */
 #test {
   *zoom: 1;
   filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF000000', endColorstr='#FF000716');

@@ -23,7 +23,10 @@
 
 @import "base";
 
+html { height: 100%; }
+
 body { 
+	min-height: 100%;
 	background: image-url('top-tile.png') repeat-x center top,
 							image-url('body-tile.png') center top;
 	// height: 2000px;
@@ -108,8 +111,11 @@ footer {
 #lights {
 	position: absolute;
 	top: 0;
+	// height: 16167px - 375px;
+	height: 15512px;
 	left: 0;
 	z-index: 1;
+	width: 100%;
 	}
 
 .block {
