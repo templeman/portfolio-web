@@ -167,8 +167,7 @@ nav {
 	}
 
 
-#test {
-	// needs latest Compass, add '@import "compass"' to your scss
+.gradient {
 	@include filter-gradient(#000000, #000716, vertical); // IE6-8
 	// IE9 SVG, needs conditional override of 'filter' to 'none'
 	$experimental-support-for-svg: true;
