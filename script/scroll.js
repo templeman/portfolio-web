@@ -7,6 +7,24 @@
 (function($) {
 	$(function() {
 
+		// Jakob Nielsen gets his own stylesheet
+		$('a.nielsen').toggle(function(e) {
+			e.preventDefault();
+			$('link:eq(0)').attr('href', '/css/nielsen.css');
+			$(this).text('Restore styles');
+		}, function(e) {
+			e.preventDefault();
+			$('link:eq(0)').attr('href', '/css/screen.css');
+			$(this).text('If you are Jakob Nielsen click here');
+		});
+
+		// supplement the default jQuery easing functions
+		$.extend($.easing, {
+			easeOutQuint: function (x, t, b, c, d) {
+					return c*((t=t/d-1)*t*t*t*t + 1) + b;
+			}
+		});
+
 		var $nav = $('#nav'),
 			$navLinks = $nav.find('a'),
 			cache = {};
@@ -44,7 +62,7 @@
 		// alert( $scrollable.scrollTop() );
 			e.preventDefault(); // if you expected return false, *sigh*
 			if ( cache[ this.href ] && cache[ this.href ].target ) {
-				$scrollable.animate( { scrollTop: cache[ this.href ].target.position().top }, 600, 'swing' );
+				$scrollable.animate( { scrollTop: cache[ this.href ].target.position().top }, 1000, 'easeOutQuint' );
 			}
 		});
 

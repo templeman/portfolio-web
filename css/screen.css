@@ -385,7 +385,7 @@ p {
 
 /* line 39, ../sass/screen.scss */
 a {
-  color: #3f61cb;
+  color: #869cdd;
   text-decoration: none;
 }
 /* line 42, ../sass/screen.scss */
@@ -403,13 +403,18 @@ a.active {
   font-size: .8em;
 }
 
-/* line 51, ../sass/screen.scss */
+/* line 50, ../sass/screen.scss */
+.verysmall {
+  font-size: .6em;
+}
+
+/* line 52, ../sass/screen.scss */
 h3 {
   font-size: 1.3em;
   font-weight: normal;
 }
 
-/* line 59, ../sass/screen.scss */
+/* line 60, ../sass/screen.scss */
 span.hero-text {
   display: block;
   margin: 30px 0 0 0;
@@ -423,7 +428,7 @@ span.hero-text {
   height: 230px;
 }
 
-/* line 65, ../sass/screen.scss */
+/* line 66, ../sass/screen.scss */
 .container {
   padding: 165px 0 0 0;
   position: relative;
@@ -431,12 +436,12 @@ span.hero-text {
   width: 800px;
   margin: 0 auto;
 }
-/* line 71, ../sass/screen.scss */
+/* line 72, ../sass/screen.scss */
 .container h2 {
   margin-top: 1.5em;
 }
 
-/* line 76, ../sass/screen.scss */
+/* line 77, ../sass/screen.scss */
 #jellyfish {
   background: url('/image/jellyfish.png?1344617791') no-repeat top left;
   position: absolute;
@@ -446,12 +451,12 @@ span.hero-text {
   left: 500px;
 }
 
-/* line 85, ../sass/screen.scss */
+/* line 86, ../sass/screen.scss */
 .creations {
   background: url('/image/ammonite.png?1344512258') no-repeat top left;
 }
 
-/* line 89, ../sass/screen.scss */
+/* line 90, ../sass/screen.scss */
 #creations-header {
   text-indent: -119988px;
   overflow: hidden;
@@ -463,12 +468,12 @@ span.hero-text {
   height: 50px;
 }
 
-/* line 93, ../sass/screen.scss */
+/* line 94, ../sass/screen.scss */
 .logbook {
   background: url('/image/angler.png?1344618852') no-repeat top left;
 }
 
-/* line 97, ../sass/screen.scss */
+/* line 98, ../sass/screen.scss */
 #logbook-header {
   text-indent: -119988px;
   overflow: hidden;
@@ -480,12 +485,12 @@ span.hero-text {
   height: 63px;
 }
 
-/* line 101, ../sass/screen.scss */
+/* line 102, ../sass/screen.scss */
 .biographical {
   background: url('/image/cuttlefish.png?1344518212') no-repeat top left;
 }
 
-/* line 105, ../sass/screen.scss */
+/* line 106, ../sass/screen.scss */
 #biographical-header {
   text-indent: -119988px;
   overflow: hidden;
@@ -497,12 +502,12 @@ span.hero-text {
   height: 65px;
 }
 
-/* line 109, ../sass/screen.scss */
+/* line 110, ../sass/screen.scss */
 footer {
   background: url('/image/seabed.png?1344521913') repeat-x;
 }
 
-/* line 113, ../sass/screen.scss */
+/* line 114, ../sass/screen.scss */
 #lights {
   position: absolute;
   top: 0;
@@ -512,38 +517,38 @@ footer {
   width: 100%;
 }
 
-/* line 123, ../sass/screen.scss */
+/* line 124, ../sass/screen.scss */
 .block {
   padding: 0 0 0 200px;
   margin-bottom: 3000px;
 }
 
-/* line 128, ../sass/screen.scss */
+/* line 129, ../sass/screen.scss */
 section.last-child {
   margin: 0;
 }
 
-/* line 131, ../sass/screen.scss */
+/* line 132, ../sass/screen.scss */
 .work-item {
   padding: 0 0 40px 140px;
 }
 
-/* line 135, ../sass/screen.scss */
+/* line 136, ../sass/screen.scss */
 .umc {
   background: url('/image/umc-icon.png?1344615020') no-repeat top left;
 }
 
-/* line 139, ../sass/screen.scss */
+/* line 140, ../sass/screen.scss */
 .psp {
   background: url('/image/psp-icon.png?1344616074') no-repeat top left;
 }
 
-/* line 142, ../sass/screen.scss */
+/* line 143, ../sass/screen.scss */
 .mo {
   background: url('/image/mo-icon.png?1344619781') no-repeat top left;
 }
 
-/* line 145, ../sass/screen.scss */
+/* line 146, ../sass/screen.scss */
 nav {
   position: fixed;
   left: 0;
@@ -551,28 +556,28 @@ nav {
   z-index: 100;
   font-size: .8em;
 }
-/* line 151, ../sass/screen.scss */
+/* line 152, ../sass/screen.scss */
 nav ul {
   margin: 0 0 0 -3px;
   padding: 0;
 }
-/* line 154, ../sass/screen.scss */
+/* line 155, ../sass/screen.scss */
 nav ul li {
   border: 1px solid #3f61cb;
   margin: 0 0 -1px 0;
 }
-/* line 157, ../sass/screen.scss */
+/* line 158, ../sass/screen.scss */
 nav ul li:last-child {
   border: none;
   padding: 20px 0 20px 20px;
 }
-/* line 161, ../sass/screen.scss */
+/* line 162, ../sass/screen.scss */
 nav ul li a {
   display: block;
   padding: 20px;
 }
 
-/* line 170, ../sass/screen.scss */
+/* line 171, ../sass/screen.scss */
 .gradient {
   *zoom: 1;
   filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF000000', endColorstr='#FF000716');

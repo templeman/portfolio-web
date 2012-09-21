@@ -37,7 +37,7 @@ body {
 p { margin-bottom: 30px; }
 
 a {
-	color: $body-copy;
+	color: #869cdd;
 	text-decoration: none;
 	&:active, &:hover {
 		color: #fff;
@@ -47,6 +47,7 @@ a {
 a.active { color: #fff; }
 
 .small { font-size: .8em; }
+.verysmall { font-size: .6em; }
 
 h3 {
 	font-size: 1.3em;
